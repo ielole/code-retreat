@@ -1,7 +1,9 @@
 class Board
-  attr_accessor :width, :height
+  cell = ['alive', 'dead', '']
+  attr_accessor :width, :height,
   def initialize(width, height)
-    @board = [:cell]
+    @board = [cell]
+
   end
 
   def neighbors
